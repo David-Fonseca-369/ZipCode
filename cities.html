@@ -2,17 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">   
-    <title>Document</title>
+    <title style="text-align: center;">Document</title>
+
+    <style>
+        .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 80%;
+
+                margin-top: 30px;
+            }
+
+
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                }
+
+                .button5 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #555555;
+                    }
+
+                .button5:hover {
+                background-color: #555555;
+                color: white;
+                }
+
+                input[type=number] {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    }
+    </style>
 </head>
 <body>
-    <h1>Cities</h1>
+    <div style="display: flex; text-align: center; justify-content: center;">
+          <div class="card">
+        <h1 style="text-align: center; padding: 10px 0;">Cities</h1>
 
-    <form action="/cities" method="post">
+        <div style="padding: 10px;">
+            <form action="/cities" method="post">
 
-        <input type="number" name="zipcode" placeholder="Zip Code">        
+            <input type="number" name="zipcode" placeholder="Zip Code">       
 
-        <button type="submit">Search</button>
-    </form>
+            <div style="margin-top: 10px;">
+                <button type="submit" class="button button5">Search</button>
+            </div>
+            </form> 
+        </div>           
+    </div>
+    </div>
+  
+    
 
 </body>
 </html>
